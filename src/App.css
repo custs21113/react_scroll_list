@@ -1,0 +1,47 @@
+
+	div.scroll-list-container {
+		height: 200px;
+		width: 718px;
+		margin: 24px;
+		padding: 0 24px;
+		border: 1px solid #ddd;
+		overflow: auto
+	}
+
+	div.scroll-list-container:hover {
+		cursor: grabbing;
+	}
+
+	#scroll-list {
+		list-style: none;
+	}
+
+	li.job-details {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
+	}
+
+	li.job-details a {
+		text-decoration: none;
+		color: rgb(18, 177, 230);
+		width: 360px;
+	}
+
+	li.job-details .location {
+		color: #555;
+	}
+
+	li.job-details .time {
+		color: #999;
+	}
+
+	.scroll-list-container::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scroll-animate {
+		transition: margin-top .8s;
+	}
